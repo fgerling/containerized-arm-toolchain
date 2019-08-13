@@ -25,6 +25,7 @@ podman build \
 ### Running
 ```
 # run the container while mounting `/arm-toolchain` to a local directory.
+mkdir -p ./arm
 podman run -ti -v $(pwd)/arm:/arm-toolchain arm_toolchain:latest
 
 # After the container (sucessfully) exit, you can find the toolchain in the
